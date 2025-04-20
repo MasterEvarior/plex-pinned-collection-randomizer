@@ -30,10 +30,9 @@ The easiest way is to use the provided container. Do not forget to add the neces
 
 ```shell
 docker run -d \
-  -e GIZE_ROOT="/repositories" \
-  -v ./path/to/your/repositories:/repositories \
-  -p 8080:8080 \
-  ghcr.io/masterevarior/gize:latest
+  -e PPCR_BASE_URL='http://192.168.1.1:32400' \
+  -e PPCR_TOKEN='xxxx' \
+  ghcr.io/masterevarior/plex-pinned-collection-randomizer:latest
 ```
 
 ### Environment Variables
