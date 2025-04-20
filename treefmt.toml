@@ -4,12 +4,6 @@ options = []
 excludes = []
 includes = ["*.md"]
 
-[formatter.beautysh]
-command = "beautysh"
-options = ["-i","2"]
-excludes = []
-includes = ["*.sh", ".githooks/pre-commit"]
-
 [formatter.black]
 command = "black"
 options = []
