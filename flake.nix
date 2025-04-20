@@ -21,6 +21,10 @@
 
           # Formatters
           black
+          beautysh
+          mdformat
+          deadnix
+          nixfmt-rfc-style
         ];
 
         shellHook = ''
@@ -28,10 +32,10 @@
         '';
 
         # Environment Variables
-        PPCR_BASE_URL = "http://x.x.x.x:32400";
+        PPCR_BASE_URL = "http://192.168.1.1:32400";
         PPCR_TOKEN = "xxxx";
         PPCR_AMOUNT = 7;
-        PPCR_MIN_AMOUNT_IN_COLLECTION = 3;
+        PPCR_MIN_AMOUNT_IN_COLLECTION = 5;
         PPCR_ALWAYS_PIN = "Plex Popular;Christmas Movies;Easter Movies;Father's Day Movies;Halloween Movies;LGBTQ Month Movies;Mother's Day Movies;New Year's Day Movies;Valentine's Day Movies";
       };
     };
