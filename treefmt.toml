@@ -4,12 +4,11 @@ options = []
 excludes = []
 includes = ["*.md"]
 
-
 [formatter.beautysh]
 command = "beautysh"
 options = ["-i","2"]
 excludes = []
-includes = ["*.sh"]
+includes = ["*.sh", ".githooks/pre-commit"]
 
 [formatter.black]
 command = "black"
@@ -30,5 +29,5 @@ excludes = []
 includes = ["*.nix"]
 
 [global]
-excludes = ["*.png","*.jpg","*.jpeg"]
+excludes = ["*.png","*.jpg","*.jpeg", "flake.lock", ".gitignore", ".envrc"]
 
