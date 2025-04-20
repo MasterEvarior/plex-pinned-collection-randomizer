@@ -43,7 +43,7 @@ docker run -d \
 | PPCR_TOKEN       | Token for your Plex server |                               | `xxxxxxx`                    | ✅         |
 | PPCR_AMOUNT      | Amount of collections that should be pinned at random      | `5`             | `12`       | ❌         |
 | PPCR_MIN_AMOUNT_IN_COLLECTION | Amount of movies/shows a collection does need to include to be considered for pinning | `0`             | `3`       | ❌         |
-| ALWAYS_PIN       | A list of strings, seperated by `;`. If these strings are found inside of a collection name, it will always be pinned|       (empty)       | `Popular;Christmas Things`       | ❌         |
+| PPCR_ALWAYS_PIN  | A list of strings, seperated by `;`. If these strings are found inside of a collection name, it will always be pinned|       (empty)       | `Popular;Christmas Things`       | ❌         |
 
 ## Development
 
