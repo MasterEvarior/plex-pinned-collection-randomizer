@@ -14,8 +14,10 @@
     {
       devShells."${x86}".default = pkgs.mkShellNoCC {
         packages = with pkgs; [
-          # Golang
-          python3
+          # Python
+          (pkgs.python3.withPackages (python-pkgs: [
+            python-pkgs.plexapi
+          ]))
 
           # Formatters
           black
@@ -24,6 +26,13 @@
         shellHook = ''
           git config --local core.hooksPath .githooks/
         '';
+
+        # Environment Variables
+        PPCR_BASE_URL = "http://x.x.x.x:32400";
+        PPCR_TOKEN = "xxxx";
+        PPCR_AMOUNT = 7;
+        PPCR_MIN_AMOUNT_IN_COLLECTION = 3;
+        PPCR_ALWAYS_PIN = "Plex Popular;Christmas Movies;Easter Movies;Father's Day Movies;Halloween Movies;LGBTQ Month Movies;Mother's Day Movies;New Year's Day Movies;Valentine's Day Movies";
       };
     };
 }
