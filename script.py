@@ -29,6 +29,17 @@ def get_list(name: str) -> List[str]:
     return value.split(";")
 
 
+def get_bool(name: str, default: bool) -> bool:
+    value = os.environ.get(name)
+    if value != None:
+        if value in value in ["true", "1", "yes"]:
+            return True
+        else:
+            return False
+    else:
+        return default
+
+
 def get_libraries(server: PlexServer) -> List[Library]:
     return [
         section
@@ -58,8 +69,23 @@ def pin_collection(collection: Collection) -> None:
     hub.promoteShared()
 
 
+def collection_is_duplicate(
+    collections: List[Collection], collection_in_question: Collection, check: bool
+):
+    if check == True:
+        return False
+
+    titles = [c.title for c in collections]
+    is_duplicate = collection_in_question.title in titles
+    if is_duplicate:
+        print(
+            f"Collection {collection_in_question.title} will not be pinned, because there is already a collection with the same title pinned"
+        )
+    return is_duplicate
+
+
 def pin_random_collections(
-    collections: List[Collection], amount: int, min: int
+    collections: List[Collection], amount: int, min: int, allow_duplicates: bool
 ) -> None:
     pinned_collections = []
 
@@ -68,6 +94,9 @@ def pin_random_collections(
         while (
             collection_to_pin in pinned_collections
             or collection_to_pin.childCount < min
+            or collection_is_duplicate(
+                pinned_collections, collection_to_pin, allow_duplicates
+            )
         ):
             collection_to_pin = random.choice(collections)
 
@@ -80,6 +109,7 @@ def main():
     PLEX_TOKEN = get_env_var("PPCR_TOKEN")
     AMOUNT = get_int("PPCR_AMOUNT", 5)
     MIN = get_int("PPCR_MIN_AMOUNT_IN_COLLECTION", 0)
+    ALLOW_DUPLICATES = get_bool("PPCR_ALLOW_DUPLICATES", True)
     ALWAYS_PIN = get_list("PPCR_ALWAYS_PIN")
 
     plex = PlexServer(PLEX_BASE_URL, PLEX_TOKEN)
@@ -91,6 +121,9 @@ def main():
     print(f"    - Plex Token: *****")
     print(f"    - Amount of collections to pin: {AMOUNT}")
     print(f"    - Minimum of movies in collection to allow for pinning: {MIN}")
+    print(
+        f"    - Pinning collections with the same name is: {'ALLOWED' if ALLOW_DUPLICATES else 'DISABLED'  }"
+    )
     print(f"    - Found {len(ALWAYS_PIN)} collections to always pin:")
     for collection_to_pin in ALWAYS_PIN:
         print(f"        - {collection_to_pin}")
@@ -101,7 +134,13 @@ def main():
 
     print("Detecting all available collections:")
     all_collections = get_all_collections(libraries)
-    print(f"    - Detected {len(all_collections)} collections in total")
+    all_collections_length = len(all_collections)
+    print(f"    - Detected {all_collections_length} collections in total")
+    if all_collections_length < AMOUNT:
+        printf(
+            f"The amount of all available collections ({all_collections_length}) is lower than the amount of requested pinned collections ({AMOUNT}), lowering the amount to {all_collections_length}"
+        )
+        AMOUNT = all_collections_length
 
     collections_to_always_pin = []
     print("Upinning all collections:")
@@ -116,7 +155,7 @@ def main():
             unpin_from_everywhere(collection)
 
     print(f"Pinning {AMOUNT} random collections")
-    pin_random_collections(all_collections, AMOUNT, MIN)
+    pin_random_collections(all_collections, AMOUNT, MIN, ALLOW_DUPLICATES)
 
     print("Additionally pinning the following collections: ")
     for collection in collections_to_always_pin:
