@@ -44,6 +44,7 @@ docker run -d \
 | PPCR_AMOUNT      | Amount of collections that should be pinned at random      | `5`             | `12`       | ❌         |
 | PPCR_MIN_AMOUNT_IN_COLLECTION | Amount of movies/shows a collection does need to include to be considered for pinning | `0`             | `3`       | ❌         |
 | PPCR_ALWAYS_PIN  | A list of strings, seperated by `;`. If these strings are found inside of a collection name, it will always be pinned|       (empty)       | `Popular;Christmas Things`       | ❌         |
+| PPCR_ALLOW_DUPLICATES | If set to false, no collections with the same name will be pinned. | `True` | `False` | ❌ |
 
 ## Development
 
