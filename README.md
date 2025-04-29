@@ -45,6 +45,7 @@ docker run -d \
 | PPCR_MIN_AMOUNT_IN_COLLECTION | Amount of movies/shows a collection does need to include to be considered for pinning | `0`             | `3`       | ❌         |
 | PPCR_ALWAYS_PIN  | A list of strings, seperated by `;`. If these strings are found inside of a collection name, it will always be pinned|       (empty)       | `Popular;Christmas Things`       | ❌         |
 | PPCR_ALLOW_DUPLICATES | If set to false, no collections with the same name will be pinned. | `True` | `False` | ❌ |
+| PPCR_INCLUDED_LIBRARY_TYPES | A list of strings, seperated by `;`. Only libraries with this type of media will be considered, valid are `movie` and `show`.   | `movie;show` | `movie` | ❌ |
 
 ## Development
 

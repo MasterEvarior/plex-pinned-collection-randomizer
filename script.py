@@ -22,29 +22,26 @@ def get_int(name: str, default: int) -> int:
         return default
 
 
-def get_list(name: str) -> List[str]:
+def get_list(name: str, default: List[str]) -> List[str]:
     value = os.environ.get(name)
     if value == None:
-        return []
+        return default
     return value.split(";")
 
 
 def get_bool(name: str, default: bool) -> bool:
     value = os.environ.get(name)
     if value != None:
-        if value in value in ["true", "1", "yes"]:
-            return True
-        else:
-            return False
+        return value in value in ["true", "1", "yes"]
     else:
         return default
 
 
-def get_libraries(server: PlexServer) -> List[Library]:
+def get_libraries(server: PlexServer, library_types: List[str]) -> List[Library]:
     return [
         section
         for section in server.library.sections()
-        if section.type in ["movie", "show"]
+        if section.type in library_types
     ]
 
 
@@ -107,20 +104,18 @@ def pin_random_collections(
 def main():
     PLEX_BASE_URL = get_env_var("PPCR_BASE_URL")
     PLEX_TOKEN = get_env_var("PPCR_TOKEN")
+    INCLUDED_LIBRARY_TYPES = get_list("PPCR_INCLUDED_LIBRARY_TYPES", ["movie", "show"])
     AMOUNT = get_int("PPCR_AMOUNT", 5)
     MIN = get_int("PPCR_MIN_AMOUNT_IN_COLLECTION", 0)
     ALLOW_DUPLICATES = get_bool("PPCR_ALLOW_DUPLICATES", True)
-    ALWAYS_PIN = get_list("PPCR_ALWAYS_PIN")
-
-    plex = PlexServer(PLEX_BASE_URL, PLEX_TOKEN)
-
-    libraries = get_libraries(plex)
+    ALWAYS_PIN = get_list("PPCR_ALWAYS_PIN", [])
 
     print("Starting with the following configuration:")
     print(f"    - Plex URL: {PLEX_BASE_URL}")
     print(f"    - Plex Token: *****")
     print(f"    - Amount of collections to pin: {AMOUNT}")
     print(f"    - Minimum of movies in collection to allow for pinning: {MIN}")
+    print(f"    - Included types of libraries: {INCLUDED_LIBRARY_TYPES}")
     print(
         f"    - Pinning collections with the same name is: {'ALLOWED' if ALLOW_DUPLICATES else 'DISABLED'  }"
     )
@@ -128,6 +123,9 @@ def main():
     for collection_to_pin in ALWAYS_PIN:
         print(f"        - {collection_to_pin}")
 
+    plex = PlexServer(PLEX_BASE_URL, PLEX_TOKEN)
+
+    libraries = get_libraries(plex, INCLUDED_LIBRARY_TYPES)
     print("Detected the following libraries:")
     for library in libraries:
         print(f"    - {library.title} ({library.type})")

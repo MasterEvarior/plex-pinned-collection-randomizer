@@ -37,6 +37,7 @@
         PPCR_AMOUNT = 7;
         PPCR_MIN_AMOUNT_IN_COLLECTION = 5;
         PPCR_ALWAYS_PIN = "Plex Popular;Christmas Movies;Easter Movies;Father's Day Movies;Halloween Movies;LGBTQ Month Movies;Mother's Day Movies;New Year's Day Movies;Valentine's Day Movies";
+        PPCR_INCLUDED_LIBRARY_TYPES = "movie;show";
       };
     };
 }
