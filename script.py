@@ -67,9 +67,11 @@ def pin_collection(collection: Collection) -> None:
 
 
 def collection_is_duplicate(
-    collections: List[Collection], collection_in_question: Collection, check: bool
+    collections: List[Collection],
+    collection_in_question: Collection,
+    allow_duplicates: bool,
 ):
-    if check == True:
+    if allow_duplicates:
         return False
 
     titles = [c.title for c in collections]
