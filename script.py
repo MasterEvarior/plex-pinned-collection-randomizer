@@ -52,6 +52,14 @@ def get_all_collections(libraries: List[Library]) -> List[Collection]:
     return all_collections
 
 
+def is_pinned(collection: Collection) -> bool:
+    return (
+        collection.visibility().promotedToOwnHome
+        or collection.visibility().promotedToRecommended
+        or collection.visibility().promotedToSharedHome
+    )
+
+
 def unpin_from_everywhere(collection: Collection) -> None:
     hub = collection.visibility()
     hub.demoteRecommended()
@@ -151,8 +159,13 @@ def main():
             )
             collections_to_always_pin.append(collection)
         else:
-            print(f"    - Unpinning {collection.title}")
-            unpin_from_everywhere(collection)
+            if is_pinned(collection):
+                print(f"    - Unpinning {collection.title}")
+                unpin_from_everywhere(collection)
+            else:
+                print(
+                    f"    - NOT unpinning {collection.title} because it is not already pinned anywhere anyway"
+                )
 
     print(f"Pinning {AMOUNT} random collections")
     pin_random_collections(all_collections, AMOUNT, MIN, ALLOW_DUPLICATES)
