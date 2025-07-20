@@ -100,6 +100,7 @@ def pin_random_collections(
         collection_to_pin = random.choice(collections)
         while (
             collection_to_pin in pinned_collections
+            or collection_to_pin.childCount is None
             or collection_to_pin.childCount < min
             or collection_is_duplicate(
                 pinned_collections, collection_to_pin, allow_duplicates
