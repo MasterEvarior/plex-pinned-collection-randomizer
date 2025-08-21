@@ -13,8 +13,6 @@ env:
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
     steps:
       - uses: googleapis/release-please-action@v4
         with:
@@ -22,9 +20,9 @@ jobs:
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
   quality:
-    if: needs.release-please.outputs.release_created
     needs:
       - release-please
+    if: needs.release-please.outputs.releases_created
     uses: ./.github/workflows/quality.yaml
   build-and-push-image:
     runs-on: ubuntu-latest
