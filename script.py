@@ -123,12 +123,12 @@ def main():
 
     print("Starting with the following configuration:")
     print(f"    - Plex URL: {PLEX_BASE_URL}")
-    print(f"    - Plex Token: *****")
+    print(f"    - Plex Token: {'*****' if len(PLEX_TOKEN) > 0 else 'EMPTY!'}")
     print(f"    - Amount of collections to pin: {AMOUNT}")
     print(f"    - Minimum of movies in collection to allow for pinning: {MIN}")
     print(f"    - Included types of libraries: {INCLUDED_LIBRARY_TYPES}")
     print(
-        f"    - Pinning collections with the same name is: {'ALLOWED' if ALLOW_DUPLICATES else 'DISABLED'  }"
+        f"    - Pinning collections with the same name is: {'ENABLED' if ALLOW_DUPLICATES else 'DISABLED'  }"
     )
     print(f"    - Found {len(ALWAYS_PIN)} collections to always pin:")
     for collection_to_pin in ALWAYS_PIN:
