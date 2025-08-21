@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/v1.3.3...1.3.4) (2025-08-21)
+
+
+### CI Infrastructure
+
+* Try to fix wrong tag during release ([92087e5](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/92087e5120cb6d03a8eba0b142f0a9c1f06685e8))
+
 ## [1.3.3](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.2...v1.3.3) (2025-08-21)
 
 
