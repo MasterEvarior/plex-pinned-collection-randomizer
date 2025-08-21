@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.1](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/v1.3.0...v1.3.1) (2025-08-21)
+
+
+### Miscellaneous Chores
+
+* Ignore CHANGELOG.md during formatting ([c8a744b](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/c8a744b3f676d7b262e81c4ee0e9e047981d0a03))
+
+
+### CI Infrastructure
+
+* Fix broken release action ([c95dc69](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/c95dc693da1ff0f0614ad3ff4cafa79e0106130e))
+
 ## [1.3.0](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.2.2...v1.3.0) (2025-08-21)
 
 
