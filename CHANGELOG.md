@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.2](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/v1.3.1...v1.3.2) (2025-08-21)
+
+
+### Miscellaneous Chores
+
+* Merge Branch ([a529311](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/a529311a5451f5400ea10f68dfc683b8665c785c))
+
+
+### CI Infrastructure
+
+* Fix broken release action ([3e25e2c](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/3e25e2cc225f89ca80e65beac3b5a9dee4a68e1a))
+* Fix broken release action ([ca6384e](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/ca6384e1ffa3f3b620f81ce3e037efcb89b04d5c))
+
 ## [1.3.1](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/v1.3.0...v1.3.1) (2025-08-21)
 
 
