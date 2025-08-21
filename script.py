@@ -120,7 +120,9 @@ def main():
     MIN = get_int("PPCR_MIN_AMOUNT_IN_COLLECTION", 0)
     ALLOW_DUPLICATES = get_bool("PPCR_ALLOW_DUPLICATES", True)
     ALWAYS_PIN = get_list("PPCR_ALWAYS_PIN", [])
+    VERSION = "1.2.2"  # x-release-please-version
 
+    print(f"Version: {VERSION}")
     print("Starting with the following configuration:")
     print(f"    - Plex URL: {PLEX_BASE_URL}")
     print(f"    - Plex Token: {'*****' if len(PLEX_TOKEN) > 0 else 'EMPTY!'}")

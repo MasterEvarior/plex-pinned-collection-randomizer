@@ -11,6 +11,9 @@
     { "type": "ci", "hidden": false, "section": "CI Infrastructure" },
     { "type": "docs", "hidden": false, "section": "Docs" }
   ],
+  "extra-files": [
+    "script.py"
+  ],
   "packages": {
     ".": {}
   }
