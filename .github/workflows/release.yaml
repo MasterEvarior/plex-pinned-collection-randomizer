@@ -1,13 +1,29 @@
-name: 'Release'
 on:
   push:
-    tags:
-      - '[0-9]+.[0-9]+.[0-9]+'
+    branches:
+      - main
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+name: release-please
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: simple
   quality:
+    if: needs.release-please.outputs.release_created
+    needs:
+      - release-please
     uses: ./.github/workflows/quality.yaml
   build-and-push-image:
     runs-on: ubuntu-latest
