@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.2...v1.3.3) (2025-08-21)
+
+
+### CI Infrastructure
+
+* Remove v from release tag ([ccfab3f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/ccfab3f9726c339b7b3032c5ac5c66b48bc20ab5))
+
 ## [1.3.2](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/v1.3.1...v1.3.2) (2025-08-21)
 
 
