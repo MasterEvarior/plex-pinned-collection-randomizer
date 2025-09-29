@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.6](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.5...1.3.6) (2025-09-29)
+
+
+### Miscellaneous Chores
+
+* **deps:** update docker/build-push-action digest to 9e436ba ([bf9bb00](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/bf9bb00e62c9f922a777a05812355b89011873cf))
+* **deps:** update docker/build-push-action digest to 9e436ba ([#37](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/37)) ([35332fe](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/35332feecde1955177e03efa581273403ba74778))
+* **deps:** update docker/login-action digest to 5e57cd1 ([671fdff](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/671fdff322a63b1406ba31fb3316aa82d8c70439))
+* **deps:** update docker/login-action digest to 5e57cd1 ([#38](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/38)) ([f488c68](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/f488c681e41f94b1656bd1bac20a688b7e4dcee3))
+
 ## [1.3.5](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.4...1.3.5) (2025-09-15)
 
 
