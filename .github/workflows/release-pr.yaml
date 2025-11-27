@@ -1,20 +1,18 @@
-name: Release Tagging and Artifacts
+name: Release PR Management
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
 permissions:
   contents: write
-  issues: write
+  pull-requests: write
 jobs:
-  tag-release:
+  release-please:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
     steps:
       - uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
-          command: release
+          command: pull-request
