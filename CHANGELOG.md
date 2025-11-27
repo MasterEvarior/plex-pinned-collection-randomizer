@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.3.7](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.6...1.3.7) (2025-11-27)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([1bf623b](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/1bf623bbb1cd8157dc87872407a6c75f16d6c1a4))
+* **deps:** update actions/checkout action to v6 ([#46](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/46)) ([f03cb53](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/f03cb53d4ecfc019810eae1680b0f6643dc1ce38))
+* **deps:** update dependency plexapi to v4.17.2 ([b176941](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/b1769417130d7b60f1b99a3ca2c2560379cfce4d))
+* **deps:** update dependency plexapi to v4.17.2 ([#45](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/45)) ([eedd95e](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/eedd95ed767f7eb0a056f6c451675a549889c57b))
+* **deps:** update docker/metadata-action digest to 318604b ([eea0ed5](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/eea0ed598692cd843b76bce8eb2d94b9821079f5))
+* **deps:** update docker/metadata-action digest to 318604b ([#42](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/42)) ([00e286d](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/00e286de45f5d708507dbb07fe4200b9936fc0a5))
+* **deps:** update docker/metadata-action digest to 8d8c7c1 ([b17043f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/b17043f6e3addc49bc2ecd1d5630100a24b8d25f))
+* **deps:** update docker/metadata-action digest to 8d8c7c1 ([#44](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/44)) ([9a2d452](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/9a2d45264653e3fcf86c82e91db992b107695274))
+* **deps:** update docker/metadata-action digest to c299e40 ([d5c4101](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/d5c41016688fb611e653e2e326075990aad8b3b1))
+* **deps:** update docker/metadata-action digest to c299e40 ([#47](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/47)) ([d500741](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/d5007417a8abdea5ec32bd567a63baabfb721ab0))
+
+
+### CI Infrastructure
+
+* fix release workflow ([9983959](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/998395936f459255cb7cf45e243e060a8b18ec25))
+* fix release workflow ([7a94419](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/7a94419a730fa70e463f98950dfd4dd3a65daf78))
+
 ## [1.3.6](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.5...1.3.6) (2025-10-17)
 
 
