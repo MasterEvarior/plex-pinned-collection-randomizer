@@ -10,8 +10,34 @@
     let
       x86 = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages."${x86}";
+      lib = nixpkgs.lib;
     in
     {
+      checks."${x86}" = {
+        lint = pkgs.stdenv.mkDerivation {
+          name = "lint";
+          src = ./.;
+
+          dontBuild = true;
+          doCheck = true;
+
+          buildInputs = [
+            pkgs.mdformat
+            pkgs.black
+            pkgs.deadnix
+            pkgs.nixfmt-rfc-style
+          ];
+
+          checkPhase = ''
+            ${lib.getExe pkgs.treefmt} --ci
+          '';
+
+          installPhase = ''
+            mkdir "$out"
+          '';
+        };
+      };
+
       devShells."${x86}".default = pkgs.mkShellNoCC {
         packages = with pkgs; [
           # Python
