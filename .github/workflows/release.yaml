@@ -1,20 +1,19 @@
-name: Release Tagging and Artifacts
+name: Release
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
 permissions:
   contents: write
+  pull-requests: write
   issues: write
 jobs:
-  tag-release:
+  release-please:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
     steps:
-      - uses: googleapis/release-please-action@v4
+      - id: release
+        uses: googleapis/release-please-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
-          command: release
