@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.3.8](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.7...1.3.8) (2025-12-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/attest-build-provenance action to v3 ([442ea66](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/442ea6671b26ee0e185bb9968569393034a0cb27))
+* **deps:** update docker/build-push-action digest to 9e436ba ([7e7d7e4](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/7e7d7e4a33e34e54a45cc05aadc6172eb073db46))
+* **deps:** update docker/build-push-action digest to 9e436ba ([#48](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/48)) ([54cc821](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/54cc82147548fe5a8945d2267c2eb65bf65328c4))
+* **deps:** update docker/login-action digest to 28fdb31 ([53bd6b0](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/53bd6b0841f9695726fd7c89b5eaba40fdf4d82e))
+* **deps:** update docker/login-action digest to 28fdb31 ([#49](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/49)) ([634b35e](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/634b35e4f6e8367fda7c23d2dde14a60784d0e55))
+* format .md files ([537245f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/537245f1cd829c91c6f0c308b172a909453bc14e))
+
+
+### CI Infrastructure
+
+* fix release workflow (once again) ([8fd476e](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/8fd476e0279955ab718a58afa058d555a5516895))
+* switch to nix checks for linting ([a0c1ce6](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/a0c1ce689ea665bb56837344f94d55769dcbf190))
+
 ## [1.3.7](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.6...1.3.7) (2025-11-27)
 
 
