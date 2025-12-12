@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.9](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.8...1.3.9) (2025-12-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([79ece78](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/79ece78a7fe9ae17f485870719f77fb54d471009))
+* **deps:** update docker/metadata-action digest to c299e40 ([b6da25d](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/b6da25d241c46e7613b86cec01eb8bd84ffd83cc))
+
 ## [1.3.8](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.7...1.3.8) (2025-12-09)
 
 
