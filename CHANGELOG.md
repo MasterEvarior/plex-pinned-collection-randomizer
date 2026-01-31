@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.3.9](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.8...1.3.9) (2026-01-31)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([79ece78](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/79ece78a7fe9ae17f485870719f77fb54d471009))
+* **deps:** update dependency plexapi to v4.18.0 ([95a78d5](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/95a78d5d9291dd4a5780e14a50871ef0b6a7a37f))
+* **deps:** update docker/build-push-action digest to 19e4966 ([3f80f0c](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/3f80f0c42bedce6cfc16a1ed61ed126577ee95f7))
+* **deps:** update docker/build-push-action digest to 8c1e8f8 ([3bca919](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/3bca919b7ad9d52567a45aa84ebfd1cf4e353c7a))
+* **deps:** update docker/login-action digest to 2e1345c ([296d795](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/296d7955038171aeef784d71a7915cb0f06f9a68))
+* **deps:** update docker/login-action digest to 3227f53 ([13276aa](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/13276aaf88cfbfcdab65098b77d9b3d560bf39a2))
+* **deps:** update docker/login-action digest to 6862ffc ([4b9865b](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/4b9865b5d454597b7479a89dec321d9a92e5fc03))
+* **deps:** update docker/login-action digest to 916386b ([bfc3a6d](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/bfc3a6db5afa094199fad72e4022ebc448af4136))
+* **deps:** update docker/metadata-action digest to a60f0f6 ([b5fb2de](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/b5fb2defa8062a346e3457512d2da0dfd16d5abe))
+* **deps:** update docker/metadata-action digest to c299e40 ([b6da25d](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/b6da25d241c46e7613b86cec01eb8bd84ffd83cc))
+* **deps:** update docker/metadata-action digest to ed95091 ([941e4fb](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/941e4fb40009ea6707ddc783ddca1a6c4e888d78))
+* **deps:** update docker/metadata-action digest to f0a4bc3 ([71d0008](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/71d0008418628e1bb0da93bf035d409d21680043))
+
 ## [1.3.8](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.7...1.3.8) (2025-12-09)
 
 
