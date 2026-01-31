@@ -120,7 +120,7 @@ def main():
     MIN = get_int("PPCR_MIN_AMOUNT_IN_COLLECTION", 0)
     ALLOW_DUPLICATES = get_bool("PPCR_ALLOW_DUPLICATES", True)
     ALWAYS_PIN = get_list("PPCR_ALWAYS_PIN", [])
-    VERSION = "1.3.8"  # x-release-please-version
+    VERSION = "1.3.9"  # x-release-please-version
 
     print(f"Version: {VERSION}")
     print("Starting with the following configuration:")
