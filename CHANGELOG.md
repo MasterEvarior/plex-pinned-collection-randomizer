@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.10](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.9...1.3.10) (2026-02-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update docker/build-push-action digest to 10e90e3 ([0a57f88](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/0a57f886c95947615a696c162ffcb2399b2764eb))
+* **deps:** update docker/build-push-action digest to ee4ca42 ([decbbbe](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/decbbbeab374c0825f71b01f71104270fe1198cb))
+
 ## [1.3.9](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.8...1.3.9) (2026-01-31)
 
 
