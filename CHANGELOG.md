@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.3.10](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.9...1.3.10) (2026-03-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/attest-build-provenance action to v4 ([dc9b5c7](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/dc9b5c75beec1ab09fb3859640cdec29c4d008b9))
+* **deps:** update docker/build-push-action digest to 10e90e3 ([0a57f88](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/0a57f886c95947615a696c162ffcb2399b2764eb))
+* **deps:** update docker/build-push-action digest to 38de522 ([#72](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/72)) ([f40c9fb](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/f40c9fbb0ff83f985538c2e7bcfa413843d04367))
+* **deps:** update docker/build-push-action digest to 8913706 ([#69](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/69)) ([f812cbd](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/f812cbd91e14c8a08c148c38627ba8198bcc9c76))
+* **deps:** update docker/build-push-action digest to 9a57217 ([#74](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/74)) ([183afe2](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/183afe21272f9fef31911e5eaf0db912d653e984))
+* **deps:** update docker/build-push-action digest to d08e5c3 ([#79](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/79)) ([e7e354f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/e7e354f8c5e4e1fe310ddd76d36c44ab1064dfa1))
+* **deps:** update docker/build-push-action digest to e25db87 ([#76](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/76)) ([7e0bd9d](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/7e0bd9d7c009ddd13b32a1800165cb568697c5ba))
+* **deps:** update docker/build-push-action digest to ee4ca42 ([decbbbe](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/decbbbeab374c0825f71b01f71104270fe1198cb))
+* **deps:** update docker/login-action digest to b45d80f ([#73](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/73)) ([f877c46](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/f877c460588c09f7408f5e8e60daea8051251f9b))
+* **deps:** update docker/login-action digest to cad8984 ([#70](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/70)) ([afbd515](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/afbd515cb218a61f3305d4c99674e1c848aca739))
+* **deps:** update docker/login-action digest to db14339 ([#80](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/80)) ([246ad0b](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/246ad0bd62702519e79e77724ba87fa51a384cb4))
+* **deps:** update docker/login-action digest to e46b7e3 ([#78](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/78)) ([100a435](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/100a4359a68a6b324a22893427be68564010b7b2))
+* **deps:** update docker/metadata-action digest to 6b695f7 ([#77](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/77)) ([0240bd1](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/0240bd108a1dc61bc88b357e8b9427c3b5edb02f))
+* **deps:** update docker/metadata-action digest to 85e876b ([#81](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/81)) ([4c95e5f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/4c95e5f61126e19b0f3f58bc6a8ba6b20f7708e3))
+* **deps:** update docker/metadata-action digest to c769610 ([#75](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/75)) ([9c84c70](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/9c84c70151abd332f5b80dcc2f5f89552a1d4fbf))
+* **deps:** update docker/metadata-action digest to cb50be4 ([#71](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/71)) ([606e19f](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/606e19f42a12f0768a1e80698c406c3a35f2405a))
+
 ## [1.3.9](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.8...1.3.9) (2026-01-31)
 
 
