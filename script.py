@@ -112,6 +112,27 @@ def pin_random_collections(
         pin_collection(collection_to_pin)
 
 
+def unpin_all(
+    collections: List[Collection], always_pin: List[String]
+) -> List[Collection]:
+    collections_to_always_pin = []
+    for collection in collections:
+        if any(keyword in collection.title for keyword in always_pin):
+            print(
+                f"    - NOT unpinning {collection.title} because it is marked as always pinned"
+            )
+            collections_to_always_pin.append(collection)
+        else:
+            if is_pinned(collection):
+                print(f"    - Unpinning {collection.title}")
+                unpin_from_everywhere(collection)
+            else:
+                print(
+                    f"    - NOT unpinning {collection.title} because it is not already pinned anywhere anyway"
+                )
+    return collections_to_always_pin
+
+
 def main():
     PLEX_BASE_URL = get_env_var("PPCR_BASE_URL")
     PLEX_TOKEN = get_env_var("PPCR_TOKEN")
@@ -153,22 +174,8 @@ def main():
         )
         AMOUNT = all_collections_length
 
-    collections_to_always_pin = []
     print("Upinning all collections:")
-    for collection in all_collections:
-        if any(keyword in collection.title for keyword in ALWAYS_PIN):
-            print(
-                f"    - NOT unpinning {collection.title} because it is marked as always pinned"
-            )
-            collections_to_always_pin.append(collection)
-        else:
-            if is_pinned(collection):
-                print(f"    - Unpinning {collection.title}")
-                unpin_from_everywhere(collection)
-            else:
-                print(
-                    f"    - NOT unpinning {collection.title} because it is not already pinned anywhere anyway"
-                )
+    collections_to_always_pin = unpin_all(all_collections, ALWAYS_PIN)
 
     print(f"Pinning {AMOUNT} random collections")
     pin_random_collections(all_collections, AMOUNT, MIN, ALLOW_DUPLICATES)
