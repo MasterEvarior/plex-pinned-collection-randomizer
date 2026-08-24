@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.13](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.12...1.3.13) (2026-08-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** update nixpkgs input to unstable ([2ffc225](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/2ffc2251bf06b54b30d3448beb810af2c0fc0b00))
+
 ## [1.3.12](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.11...1.3.12) (2026-07-11)
 
 
