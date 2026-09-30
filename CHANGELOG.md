@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.14](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.13...1.3.14) (2026-09-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency plexapi to v4.18.3 ([#112](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/issues/112)) ([5c3aa6a](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/commit/5c3aa6a153197970980db84c699a6987984a7f31))
+
 ## [1.3.13](https://github.com/MasterEvarior/plex-pinned-collection-randomizer/compare/1.3.12...1.3.13) (2026-08-24)
 
 
